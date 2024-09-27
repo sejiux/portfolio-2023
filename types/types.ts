@@ -1,13 +1,10 @@
 import { StaticImageData } from "next/image";
 
 export type Article = {
+  link: string;
   date: string;
   title: string;
   ReadingTime: string;
-  link: string;
-  categoryId: number;
-  category: ItemCategory;
-  createdAt: Date;
 };
 
 export type WorksData = {
@@ -31,14 +28,3 @@ export type Case = {
   images: StaticImageData[];
 } | null;
 
-export type ItemCategory = {
-  id: number;
-  category: string;
-  createdAt: Date;
-};
-
-export type ProductCategory = {
-  id: number;
-  category: string;
-  createdAt: Date;
-};
